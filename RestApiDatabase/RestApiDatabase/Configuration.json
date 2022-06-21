@@ -1,0 +1,9 @@
+{
+	"DatabaseConnectionTimeout": "00:00:10",
+	"DatabaseName": "currency",
+	"DatabasePort": "3306",
+	"DatabaseServer": "127.0.0.1",
+	"Password": "Ua9h_h",
+	"UserId": "dbuser",
+	"ApiBaseUrl": "https://www.nbrb.by"
+}
