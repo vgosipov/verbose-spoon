@@ -1,0 +1,1 @@
+﻿SELECT MAX("Date") FROM DynamicRates

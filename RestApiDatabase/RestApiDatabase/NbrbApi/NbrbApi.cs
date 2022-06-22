@@ -21,5 +21,13 @@ namespace RestApiDatabase.Api
             var uri = $"/api/exrates/currencies/{currencyId}";
             return Get<CurrencyModel>(uri);
         }
+
+        public RateShortModel[] GetRateShortModel(int currencyId, DateTime startDate, DateTime endDate)
+        {
+            var strStartDate = startDate.ToString("D", System.Globalization.CultureInfo.InvariantCulture);
+            var strEndDate = endDate.ToString("D", System.Globalization.CultureInfo.InvariantCulture);
+            var uri = $"/api/exrates/rates/dynamics/{currencyId}?startDate={strStartDate}&endDate={strEndDate}";
+            return Get<RateShortModel[]>(uri);
+        }
     }
 }

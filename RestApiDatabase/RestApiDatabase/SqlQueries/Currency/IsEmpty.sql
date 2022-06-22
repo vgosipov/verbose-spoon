@@ -1,0 +1,1 @@
+﻿SELECT 1 FROM currency WHERE ROWNUM=1
