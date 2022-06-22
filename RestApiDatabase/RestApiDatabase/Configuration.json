@@ -1,0 +1,9 @@
+{
+	"DatabaseConnectionTimeout": "00:00:10",
+	"DatabaseName": "XE",
+	"DatabasePort": "49161",
+	"DatabaseServer": "localhost",
+	"Password": "Ua9h_h",
+	"UserId": "db_user",
+	"ApiBaseUrl": "https://www.nbrb.by"
+}
