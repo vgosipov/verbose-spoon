@@ -5,11 +5,11 @@ using MySql.Data.MySqlClient;
 
 namespace RestApiDatabase.Objects
 {
-    public class DatabaseConnection
+    public class MySqlDatabaseConnection
     {
         private readonly string connectionString;
 
-        public DatabaseConnection(IConfiguration configuration)
+        public MySqlDatabaseConnection(IConfiguration configuration)
         {
             connectionString = configuration.ConnectionString;
         }

@@ -10,11 +10,16 @@ namespace RestApiDatabase.Api
         {
         }
 
-        public CurrencyModel[] GetCurrencies(int? currencyId = null)
+        public CurrencyModel[] GetCurrencies()
         {
-            var curId = (currencyId == null) ? null : $"/{currencyId}";
-            var uri = $"/api/exrates/currencies{curId}";
+            var uri = $"/api/exrates/currencies";
             return Get<CurrencyModel[]>(uri);
+        }
+
+        public CurrencyModel GetCurrency(int currencyId)
+        {
+            var uri = $"/api/exrates/currencies/{currencyId}";
+            return Get<CurrencyModel>(uri);
         }
     }
 }
